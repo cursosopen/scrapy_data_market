@@ -1,0 +1,9 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/spiders/.vs/spiders/v16
+/spiders/packages
+/spiders/spiders/bin/Debug
+/spiders/spiders/obj/Debug
