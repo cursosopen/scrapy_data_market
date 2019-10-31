@@ -67,6 +67,7 @@
     <Compile Include="Models\InfraEstructure\DataBaseContext.cs" />
     <Compile Include="Models\InfraEstructure\Maps\CategoriaMap.cs" />
     <Compile Include="Models\InfraEstructure\Maps\ProdutoMap.cs" />
+    <Compile Include="Models\InfraEstructure\SeedData\CategoriaSeed.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scrapys\BaseScrapy.cs" />
@@ -82,12 +83,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\packages\WebDriver.ChromeDriver.win32.76.0.3809.68\content\chromedriver.exe">
+    <Content Include="..\packages\WebDriver.ChromeDriver.win32.78.0.3904.70\content\chromedriver.exe">
       <Link>chromedriver.exe</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -1,5 +1,6 @@
 ﻿using spiders.Models.Entitites;
 using spiders.Models.InfraEstructure.Maps;
+using spiders.Models.InfraEstructure.SeedData;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -13,6 +14,7 @@ namespace spiders.Models.InfraEstructure
     {
         public DataBaseContext() : base("DefaultConnection")
         {
+            Database.SetInitializer(new CategoriaSeed());
         }
 
         public virtual DbSet<Categoria> Categoria { get; set; }
